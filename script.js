@@ -13,7 +13,6 @@ newP.textContent = "ceci est une nouvelle p";
 let contenerProduit = document.getElementById("produit");
 contenerProduit.appendChild(newP)
 
-//let ajoutClasse1 = document.getElementById("produit");
-//let ajoutClasse2 = document.getElementById("information");
-//ajoutClasse1.classList.add("classe2");
-//ajoutClasse2.classList.add("classe2");
+
+// recuperation d'elements par la classe
+let ajoutByClasse = document.getElementsByClassName("classe2");

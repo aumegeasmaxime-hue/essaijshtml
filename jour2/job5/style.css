@@ -9,9 +9,3 @@ footer{
 body{
     height: 4096px;
 }
-
-/*root Sélectionne l'élément racine du document */
-:root { 
-/* --accent-color est la reference pour js */
-    --accent-color: orange;
-}

@@ -1,10 +1,7 @@
-document.addEventListener("keydown",function(event){
-    console.log(event.key)
-    let zoneText = document.getElementById("keylogger").textContent = event.key;
+let zoneText = document.getElementById("keylogger");
+document.addEventListener("keydown",function(event){    
+    if ()
+        zoneText.value += event.key; 
+    
     
 })
-
-function remplirZoneTxt(event){
-    
-
-}

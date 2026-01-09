@@ -1,22 +1,78 @@
-const tabRef = ["ArrowUp","ArrowUp","ArrowDown","ArrowDown","ArrowLeft","ArrowRight","ArrowLeft","ArrowRight","a","b","Enter"];
+const tabRef = ["ArrowUp","ArrowUp","ArrowDown","ArrowDown","ArrowLeft","ArrowRight","ArrowLeft","ArrowRight","b","a","Enter"];
 let tabEntrees = [];
 
 document.addEventListener("keydown",function(event){         
         tabEntrees.push(event.key);
-        console.log(event.key)
+        
+        let count = 0;        
+        if (tabEntrees.length == tabRef.length){            
+            for (let i = 0; i < tabRef.length; i++) {
+                if (tabRef[i] == tabEntrees[i]) {
+                    count++
+                }
+            }            
+        }    
+        if (count == tabEntrees.length) {            
+            document.documentElement.style.setProperty('--accent-color', '#0062FF');
+            tabEntrees = [];
+            console.log(tabEntrees)
+
+        }
+        if ((tabEntrees.length == tabRef.length)&&(count != tabEntrees.length)){
+            tabEntrees = [];
+        }
+    
+                      
+           
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //console.log(event.key)
         console.log(tabEntrees)
-         console.log(tabEntrees.length)
-            if (tabEntrees.length == 11){                
-                let isEqual = true;
-                for (let i = 0; i < tabRef.length; i++) {
-                    if (tabRef[i] !== tabEntrees[i]) {
-                    
-                    console.log("false")
-                    }
-                    else {
-                    console.log(isEqual);
-                    document.documentElement.style.setProperty('--accent-color', 'blue');
-                    }
-                }               
-            }      
+        //console.log(tabEntrees.length)
 })

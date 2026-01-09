@@ -1,0 +1,28 @@
+:root
+
+
+header {
+    background-color: var(--accent-color);
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    top: 2%;
+    text-align: center;
+}
+main {
+    background-color: var(--accent-color);
+    height: 100px;
+    width: 100%;
+    margin-top: 50%;
+    text-align: center;
+
+}
+footer {
+    background-color: var(--accent-color);
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    bottom: 2%;
+    text-align: center;
+    
+}

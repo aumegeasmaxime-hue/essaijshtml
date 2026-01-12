@@ -1,0 +1,17 @@
+div.joueur{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    font-size: 9px;
+    color: antiquewhite;
+    text-align: center;    
+    border-radius: 2px;
+    border-color: blue;
+    position: relative;
+    
+    
+}
+body{
+    background-color: brown;
+
+}

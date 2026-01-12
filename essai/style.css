@@ -1,4 +1,4 @@
-div.joueur{
+#joueur{
     width: 10px;
     height: 10px;
     background-color: black;
@@ -8,7 +8,10 @@ div.joueur{
     border-radius: 2px;
     border-color: blue;
     position: relative;
-    
+    top : var(--accent-top);
+    bottom: var(--accent-bottom);
+    right : var(--accent-right);
+    left: var(--accent-left)
     
 }
 body{
